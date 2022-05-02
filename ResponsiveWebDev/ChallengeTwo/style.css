@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* Typography */
+:root {
+    --ff-pt: 'PT serif', serif;
+    --ff-poppins: 'Poppins', sans-serif;
+    --fs-36: 2.25rem;
+    --fs-18: 1.125rem;
+    --fs-14: 0.875;
+    --fs-12: 0.75rem;
+    --clr-black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 1000px;
+    padding: 24px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+    grid-row-gap: 5%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "r1" "r2" "r3"
+    "r4" "r5" "r6";
+    grid-gap: 5%;
+}
+
+.main-container .r2,
+.main-container .r5 {
+    margin-top: 30%;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: var(--fs-36);
+    font-family: var(--ff-pt);
+    font-weight: 700;
+}
+
+.text-container {
+    max-width: 40%;
+    line-height: 27px;
+}
+
+.text-title {
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+    font-size: var(--fs-18);
+    text-transform: uppercase;
+}
+
+.text-description {
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    font-size: var(--fs-18);
+}
+
+img {
+    max-width: 238px;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-lr;
+}
+
+.container-position {
+    text-transform: uppercase;
+}
+
+.name {
+    font-family: var(--ff-poppins);
+    font-family: var(--fs-18);
+    font-weight: 600;
+    margin: 0;
+}
+
+.position {
+    font-size: var(--fs-12);
+    font-family: var(--ff-pt);
+    font-weight: 400;
+}
+
+footer {
+    margin: 0 auto 0;
+}
+
+footer h6 {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "r1" "r2"
+        "r3" "r4"
+        "r5" "r6";
+        grid-row-gap: 0%;
+    }
+
+    .main-container .r5 {
+        margin: 0;
+    }
+    .main-container .r2,
+    .main-container .r4,
+    .main-container .r6 {
+        margin-top: 30%;
+    }
+}
+

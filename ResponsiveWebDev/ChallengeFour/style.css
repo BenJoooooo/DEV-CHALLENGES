@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --ff-mont: 'Montserrat', sans-serif;
+    --ff-play: 'Playfair Display', serif;
+
+    --fs-48: 3rem;
+    --fs-14: .875rem;
+    --fs-24: 1.5rem;
+    --fs-18: 1.125rem;
+    --fs-16: 1rem;
+    --fs-10: .625rem;
+    --fs-8: .5rem;
+    --fs-12: .75rem;
+
+    --clr-black: #000000;
+    --clr-grey-1: #333333;
+    --clr-grey-2: #4f4f4f;
+    --clr-grey-4: #bdbdbd;
+    --clr-grey-footer: #828282;
+    --clr-grey-bg: #c4c4c4;
+    --clr-orange-bg: #f2994a;
+    --clr-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-mont);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+
+.title {
+    margin: 0;
+    font-family: var(--ff-play);
+    font-weight: bold;
+    font-size: var(--fs-48);
+    margin-bottom: .25em;
+}
+
+.description-container {
+    display: flex;
+    align-items: flex-start;
+    column-gap: .5em;
+
+}
+
+.description-container .dots {
+    padding-top: 5px;
+}
+
+.description-container .description {
+    margin: 0;
+    text-align: justify;
+    line-height: 17.07px;
+    font-style: italic;
+    font-family: var(--ff-mont);
+    font-size: var(--fs-14);
+    color: var(--clr-grey-2);
+    max-width: 592px;
+}
+
+.background {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.ingredients {
+    margin: 0;
+    font-family: var(--ff-play);
+    font-weight: bold;
+    font-size: var(--fs-24);
+    margin-bottom: 2rem;
+}
+.ingredient-main-title {
+    font-family: var(--ff-play);
+    font-size: var(--fs-18);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--clr-grey-1);
+}
+
+.ingredients-content {
+    max-width: 554px;
+    width: 100%;
+}
+
+.ingredients-container {
+    font-size: var(--fs-16);
+    font-family: var(--ff-mont);
+    color: var(--clr-grey-1);
+    line-height: 25px;
+    margin-top: 2rem;
+    
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-container input {
+    margin: 6px 10px 0 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+.numbers {
+    font-family: var(--ff-play);
+    font-size: var(--fs-24);
+    color: var(--clr-white);
+    font-weight: 700;
+    height: 36px;
+    width: 46px;
+    background-color: var(--clr-orange-bg);
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    padding: 1em 1.5em;
+}
+
+.instructions {
+    margin: 0;
+    font-family: var(--ff-play);
+    font-weight: bold;
+    font-size: var(--fs-24);
+    margin-block: 2rem;
+}
+
+.instruction-detail {
+    margin: 0;
+    padding: 0;
+}
+
+.instruction-info {
+    display: flex;
+    column-gap: 2em;
+    margin-block: 1em;
+}
+
+.side-content {
+    width: 216px;
+    height: 367px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row-one {
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    margin: 0;
+    color: var(--clr-grey-4);
+    font-size: var(--fs-10);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info-description {
+    margin: 0;
+    color: var(--clr-grey-1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.side-content .material-icons.md-36{
+    color: var(--clr-orange-bg);
+}
+
+.side-content .material-icons {
+    font-size: 2.5rem;
+}
+
+.source {
+    font-size: var(--fs-16);
+    font-family: var(--ff-mont);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--clr-grey-4);
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-description {
+    margin: 0;
+    font-family: var(--ff-mont);
+    font-weight: 500;
+    font-size: var(--fs-14);
+    color: var(--clr-grey-footer);
+}
+
+.github-link {
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+    .ingredients-container {
+        flex-direction: column;
+    }
+
+    .side-content {
+        order: 1;
+        margin-block: 1em;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        box-shadow: none;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .ingredients-content {
+        order: 2;
+    }
+}
