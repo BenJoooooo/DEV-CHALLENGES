@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Montserrat", sans-serif;
+  color: inherit;
+}
+* h1, * h2, * h3, * h4, * h5, * h6, * p {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  padding: 1em;
+  max-width: 1300px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  justify-content: center;
+}
+#container nav {
+  margin-block: 0.5em;
+}
+#container nav h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #4e5150;
+}
+#container main {
+  margin-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+}
+#container main .checkout-container {
+  max-width: 350px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  height: 400px;
+}
+#container main .checkout-container .checkout-container-wrapper {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1em;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-label {
+  display: block;
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-block: 0.5em;
+  border-block: 1px solid #bdbdbd;
+  width: 100%;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .margin-0 {
+  margin: 0;
+  border: none;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .img-container {
+  width: 100px;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .img-container img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .item-info .item-title {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #4e5150;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .item-info .item-price {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  align-items: center;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .item-info .item-price .item-sale {
+  color: #f2994a;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .item-info .item-price .item-discount {
+  color: #4e5150;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .btn-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .input-value, #container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .decrement, #container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .increment {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+#container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .decrement, #container main .checkout-container .checkout-container-wrapper .items-container .item-info-container .input-container .increment {
+  background-color: #e0e0e0;
+  width: 20px;
+  border-radius: 4px;
+  color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container main .checkout-container .checkout-container-wrapper .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#container main .info-container {
+  max-width: 350px;
+  margin-bottom: 5em;
+}
+#container main .info-container .info-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#container main .info-container .info-container-wrapper .contact-info h1 {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-block: 1em;
+}
+#container main .info-container .info-container-wrapper .contact-info .email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .email label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .email .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .phone .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #333333;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #333333;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #333333;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .full-name .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+#container main .info-container .info-container-wrapper .contact-info .address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .address label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .address .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+#container main .info-container .info-container-wrapper .contact-info .city {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .city label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 10%;
+}
+#container main .info-container .info-container-wrapper .contact-info .city .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .group label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container {
+  position: relative;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container input {
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 12px;
+  width: 100%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container ::-moz-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 22%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container :-ms-input-placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 22%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container ::placeholder {
+  font-size: 0.75rem;
+  color: #828282;
+  font-weight: 600;
+  padding-left: 22%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container i {
+  color: #828282;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container .dropdown {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  font-size: 0.625rem;
+  background-color: #e0e0e0;
+  padding: 0.8em;
+  border-radius: 4px;
+}
+#container main .info-container .info-container-wrapper .contact-info .group .icon-container .dropdown i {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+#container main .info-container .info-container-wrapper .contact-info .prompt {
+  display: flex;
+  align-items: center;
+  margin-block: 1em;
+  gap: 0.5em;
+}
+#container main .info-container .info-container-wrapper .contact-info .prompt input {
+  border-radius: 4px;
+  border: 1px solid #828282;
+}
+#container main .info-container .info-container-wrapper .contact-info .prompt p {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+#container main .info-container button {
+  float: right;
+  padding: 1em 2em;
+  background-color: #f2994a;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+#container footer {
+  text-align: center;
+}
+#container footer p {
+  font-size: 0.875rem;
+  color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+}
+#container footer p a {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  #container {
+    align-items: center;
+  }
+  #container main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5em;
+  }
+}/*# sourceMappingURL=main.css.map */

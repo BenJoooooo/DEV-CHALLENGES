@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Sass Tutorial</title>   
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <h1>Checkout</h1>
+      </nav>
+
+      <main>
+        <div class="checkout-container">
+          <div class="checkout-container-wrapper">
+            <div class="items-container">
+              <div class="img-container">
+                <img src="photo1.png" alt="">
+              </div>
+              <div class="item-info-container">
+                <div class="item-info">
+                  <p class="item-title">Vintage Backbag</p>
+                  <div class="item-price">
+                    <p class="item-sale">$54.99</p>
+                    <p class="item-discount"><s>$94.99</s></p>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <div class="btn-container">
+                    <p class="decrement">-</p>
+                    <p class="input-value">1</p>
+                    <p class="increment">+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-container">
+              <div class="img-container">
+                <img src="photo2.png" alt="">
+              </div>
+              <div class="item-info-container">
+                <div class="item-info">
+                  <p class="item-title">Levi Shoes</p>
+                  <div class="item-price">
+                    <p class="item-sale">$74.99</p>
+                    <p class="item-discount"><s>$124.99</s></p>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <div class="btn-container">
+                    <p class="decrement">-</p>
+                    <p class="input-value">1</p>
+                    <p class="increment">+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-container column">
+              <div class="item-label">
+                <h3>Shipping</h3>
+                <p>$19</p>
+              </div>
+              <div class="item-label margin-0">
+                <h3>Total</h3>
+                <p>$148.98</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="info-container-wrapper">
+            <div class="contact-info">
+
+              <h1>Contact Information</h1>
+
+              <div class="email">
+                <label for="">E-mail</label>
+                <div class="icon-container">
+                  <input type="text" placeholder="Enter your email...">
+                  <i class="fa fa-envelope"></i>
+                </div>
+              </div>
+              <div class="phone">
+                <label for="">Phone</label>
+                <div class="icon-container">
+                  <input type="text" placeholder="Enter your phone...">
+                  <i class="fa fa-phone"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info">
+
+              <h1>Shipping address</h1>
+
+              <div class="full-name">
+                <label for="">Full name</label>
+                <div class="icon-container">
+                  <input type="text" placeholder="Rodney Cotton" class="active">
+                  <i class="fa fa-user-circle"></i>
+                </div>
+              </div>
+
+              <div class="address">
+                <label for="">Address</label>
+                <div class="icon-container">
+                  <input type="text" placeholder="Your address.." class="active">
+                  <i class="fa fa-home"></i>
+                </div>
+              </div>
+
+              <div class="city">
+                <label for="">City</label>
+                <div class="icon-container">
+                  <input type="text" placeholder="Your city..." class="active">
+                  <i class="fa fa-building"></i>
+                </div>
+              </div>
+
+              <div class="group">
+                <div class="flex">
+                  <label for="">Country</label>
+                    <div class="icon-container">
+                      <input type="text" placeholder="Your country.." class="active">
+                      <i class="fa fa-building"></i>
+                      <div class="dropdown">
+                        <i class="fa fa-chevron-down"></i>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                  <label for="">Postal Code</label>
+                    <div class="icon-container">
+                      <input type="text" placeholder="Your postal code.." class="active">
+                      <i class="fa fa-building"></i>
+                    </div>
+                </div>
+              </div>
+
+              <div class="prompt">
+                <input type="checkbox">
+                <p>Save this information for next time</p>
+              </div>
+            </div>
+          </div>
+
+          <button>Continue</button>
+        </div>
+      </main>
+
+      <footer>
+        <p>created by <a href="https://github.com/BenJoooooo">BenJoooooo</a> - devChallenges.io</p>
+      </footer>
+    </div>
+  </body>
+</html>
+  

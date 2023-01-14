@@ -1,0 +1,26 @@
+$font-main: 'Montserrat', sans-serif;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 600,
+    "bolder": 700
+);
+$font-sizes: (
+    "--fs-10": .625rem,
+    "--fs-12": .75rem,
+    "--fs-14": .875rem,
+    "--fs-16": 1rem,
+    "--fs-18": 1.125rem,
+    "--fs-24": 1.5rem,
+    "--fs-36": 2.25rem
+);
+$colors: (
+    "dark-grey": #4e5150,
+    "light-orange": #f2994a,
+    "bg-grey": #e0e0e0,
+    "bg-light-grey": #f2f2f2,
+    "font-dark-grey": #828282,
+    "font-dark-black": #333333,
+    "footer-color": #bdbdbd,
+    "font-grey": #4f4f4f
+);

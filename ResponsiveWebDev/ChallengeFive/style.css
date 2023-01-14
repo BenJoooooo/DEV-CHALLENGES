@@ -113,7 +113,7 @@ main {
 .grid-profile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
     gap: 1em;
     grid-template-areas: 
     "one two two"
